@@ -7,7 +7,7 @@ export function  Footer() {
           DIPDOP
         </h1>
 
-        <div className="flex justify-between text-gray-800 ">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-between text-gray-800 ">
           <div>
             <h3 className="font-bold text-lg mb-4 uppercase">Contact</h3>
             <div className="space-y-1 text-sm md:text-base">
