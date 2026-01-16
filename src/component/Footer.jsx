@@ -11,8 +11,8 @@ export function  Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4 uppercase">Contact</h3>
             <div className="space-y-1 text-sm md:text-base">
-              <p><span className="font-bold">Email:</span> hello@dipdop.id</p>
-              <p><span className="font-bold">Phone:</span> (203) 555-5555</p>
+              <p><span className="font-bold">Email:</span> official.dipdop@gmail.com</p>
+              <p><span className="font-bold">Phone:</span> +62 811-305-490</p>
             </div>
           </div>
 
@@ -38,9 +38,8 @@ export function  Footer() {
             <h3 className="font-bold text-lg mb-4 uppercase">Social</h3>
             <ul className="space-y-1 font-bold underline decoration-1 underline-offset-2">
               <li><a href="https://instagram.com/dipdop.id" className="hover:opacity-70">Instagram</a></li>
-              <li><a href="#" className="hover:opacity-70">X</a></li>
-              <li><a href="#" className="hover:opacity-70">LinkedIn</a></li>
-              <li><a href="#" className="hover:opacity-70">Spotify</a></li>
+              <li><a href="https://www.linkedin.com/company/dipdop/posts/?feedView=all" className="hover:opacity-70">LinkedIn</a></li>
+              <li><a href="https://twitter.com/dipdop_id" className="hover:opacity-70">X</a></li>
             </ul>
           </div>
         </div>
