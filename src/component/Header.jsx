@@ -1,18 +1,76 @@
-import dipdop from '/dipdop.svg'
+import React, { useState, useEffect } from 'react';
+import dipdop from '/dipdop.svg';
 
 export function Header() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    // Efek untuk mengubah tampilan navbar saat di-scroll
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    // Data Navigasi sesuai Section Anda
+    const navLinks = [
+        { name: 'Home', href: '#hero' },
+        { name: 'About', href: '#overview' },
+        { name: 'Ecosystem', href: '#ecosystem' },
+        { name: 'Why Us', href: '#why-us' },
+        { name: 'Contact', href: '#contact' },
+    ];
+
     return (
-        <header className="w-full bg-[#E5E5E5] h-15 p-2 flex justify-center items-center" >
-            <div className="w-full  h-full flex justify-between">
-                <div className='w-auto p-2 aspect-square h-auto'>
-                    <img src={dipdop} alt="dipdop" className='w-auto h-full' />
+        <header 
+            className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+                isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm h-16' : 'bg-[#E5E5E5] h-20'
+            }`}
+        >
+            <div className="max-w-7xl mx-auto h-full px-4 md:px-8 flex justify-between items-center">
+                
+                {/* LOGO AREA */}
+                <div className="flex items-center gap-4">
+                    <div className='h-10 md:h-12 aspect-square'>
+                        <img src={dipdop} alt="dipdop" className='w-full h-full object-contain' />
+                    </div>
+                    {/* Hidden on mobile to save space */}
+                    <div className="hidden lg:block border-l border-gray-400 pl-4">
+                        <p className='text-xs font-black text-gray-800 leading-tight tracking-tighter'>
+                            PT DIPDOP <br /> UNIVERSE CORP
+                        </p>
+                    </div>
                 </div>
-                <div className='w-auto h-full flex pr-7 justify-center items-center'>
-                    <p className='text-2xl underline text-bold text-gray-800'>
+
+                {/* NAVIGATION AREA (Anchor Links) */}
+                <nav className="hidden md:flex items-center gap-8">
+                    {navLinks.map((link) => (
+                        <a 
+                            key={link.name}
+                            href={link.href}
+                            className="text-sm font-bold text-gray-800 hover:text-[#588A96] transition-colors relative group"
+                        >
+                            {link.name}
+                            {/* Animated Underline */}
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#588A96] transition-all group-hover:w-full"></span>
+                        </a>
+                    ))}
+                </nav>
+
+                {/* TAGLINE / CTA MINI */}
+                <div className='flex items-center gap-4'>
+                    <p className='hidden sm:block text-sm italic font-medium text-gray-500'>
                         Your Ultimate Concept
                     </p>
+                    <a 
+                        href="#contact" 
+                        className="bg-[#588A96] text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-black transition-all shadow-md"
+                    >
+                        START COLLAB
+                    </a>
                 </div>
             </div>
         </header>
-    )
+    );
 }

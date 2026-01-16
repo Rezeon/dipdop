@@ -82,7 +82,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className='w-full flex flex-col bg-white'>
+      <div className='w-full flex flex-col pt-20 bg-white'>
         <div className="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
 
           {/* Container Menu yang akan muncul/hilang */}
@@ -138,7 +138,7 @@ function App() {
             <span className="text-teal-800">Agency</span>
           </h2>
         </div>
-        <div className='w-full md:flex-row flex-col border-b md:border-b-0 border-black h-auto md:h-90 lg:h-120 flex bg-[#E5E5E5]'>
+        <section id='hero' className='w-full md:flex-row flex-col border-b md:border-b-0 border-black h-lvh md:h-90 lg:h-120 flex bg-[#E5E5E5]'>
           <img src={Team} className='w-full md:w-2/3 h-full' alt="" />
           <div className='md:w-1/3 h-auto md:h-full flex flex-col gap-5 p-5 md:p-4 md:gap-5 lg:gap-5 lg:p-10 '>
             <h1 className='w-full h-auto text-xl font-bold text-black'>Membangun Brand, Menggerakkan UMKM, Menciptakan Dampak Nyata</h1>
@@ -158,8 +158,8 @@ function App() {
               <div className='w-1 h-1 bg-[#588A96] rounded-lg transition-all duration-300 group-hover:w-full'></div>
             </div>
           </div>
-        </div>
-        <div className='w-full h-lvh flex flex-col gap-7 md:gap-20 justify-center items-center p-5 md:px-5 md:py-10 bg-[#588A96] text-white '>
+        </section>
+        <section id='overview' className='w-full h-lvh flex flex-col gap-7 md:gap-20 justify-center items-center p-5 md:px-5 md:py-10 bg-[#588A96] text-white '>
           <div className='w-auto px-10 flex flex-col items-center gap-5'>
             <h1 className='w-auto font-bold underline text-3xl'>TENTANG DIPDOP UNIVERSE CORP</h1>
             <article>
@@ -172,8 +172,8 @@ function App() {
             <p className='h-full p-2 border-r-2 border-white'># UMKM Empowerment Platform</p>
             <p className='h-full p-2'># Integrated Ecosystem Approach</p>
           </div>
-        </div>
-        <div className='w-full h-auto pb-8 pt-8 flex justify-center flex-col bg-[#808DFD] '>
+        </section>
+        <section id='ecosystem' className='w-full h-auto pb-8 pt-8 flex justify-center flex-col bg-[#808DFD] '>
           <div className='flex flex-col text-white justify-center p-10 items-center'>
             <p className=' text-4xl uppercase font-extrabold '>Our Ecosystem</p>
             <h1 className='text-lg font-bold'>Empat unit usaha yang saling terintegrasi untuk menjawab kebutuhan bisnis, komunitas,  dan pemberdayaan UMKM.</h1>
@@ -217,7 +217,7 @@ function App() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
         <h2 className="text-center px-4 text-lg md:text-4xl text-gray-900 py-2 font-bold uppercase flex flex-wrap justify-center items-center gap-2">More Than a Vendor. Your  <span className='text-teal-700'>Ecosystem Partner</span></h2>
         <div className='w-full h-auto flex md:flex-row flex-col bg-[#E5E5E5] text-gray-800 border-t border-b border-black'>
           <div className='w-full h-auto flex flex-col '>
@@ -248,7 +248,7 @@ function App() {
 
           </div>
         </div>
-        <div className="bg-[#7B89FF] p-10 font-sans min-h-screen flex flex-col items-center">
+        <section id='why-us' className="bg-[#7B89FF] p-10 font-sans min-h-screen flex flex-col items-center">
 
           <div className="w-full max-w-4xl border-2 border-dashed border-white/50 p-6 md:p-12">
 
@@ -280,8 +280,9 @@ function App() {
               {collaborationData.footer.description}
             </p>
           </div>
-        </div>
-        <div
+        </section>
+        <section
+          id='contact'
           className="relative min-h-screen flex flex-col items-center justify-center p-6 font-sans bg-center bg-cover bg-no-repeat"
           style={{ backgroundImage: `url(${A})` }}
         >
@@ -321,7 +322,7 @@ function App() {
 
             <div className="absolute -z-10 w-64 h-64 bg-[#7B89FF]/30 blur-[100px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-50"></div>
           </div>
-        </div>
+        </section>
       </div>
       <Footer />
     </>
