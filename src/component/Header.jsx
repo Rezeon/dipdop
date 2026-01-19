@@ -4,7 +4,6 @@ import dipdop from '/dipdop.svg';
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
 
-    // Efek untuk mengubah tampilan navbar saat di-scroll
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
@@ -13,7 +12,6 @@ export function Header() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Data Navigasi sesuai Section Anda
     const navLinks = [
         { name: 'Home', href: '#hero' },
         { name: 'About', href: '#overview' },
@@ -28,7 +26,7 @@ export function Header() {
                 isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm h-16' : 'bg-[#E5E5E5] h-20'
             }`}
         >
-            <div className="max-w-7xl mx-auto h-full px-4 md:px-8 flex justify-between items-center">
+            <div className="mx-auto h-full px-4 md:px-8 flex justify-between items-center">
                 
                 {/* LOGO AREA */}
                 <div className="flex items-center gap-4">

@@ -138,8 +138,8 @@ function App() {
             <span className="text-teal-800">Agency</span>
           </h2>
         </div>
-        <section id='hero' className='w-full md:flex-row flex-col border-b md:border-b-0 border-black h-lvh md:h-90 lg:h-120 flex bg-[#E5E5E5]'>
-          <img src={Team} className='w-full md:w-2/3 h-full' alt="" />
+        <section id='hero' className='w-full md:flex-row flex-col border-b md:border-b-0 border-black h-auto md:h-lvh lg:h-120 flex bg-[#E5E5E5]'>
+          <img src={Team} className='w-full md:w-2/3 h-auto' alt="" />
           <div className='md:w-1/3 h-auto md:h-full flex flex-col gap-5 p-5 md:p-4 md:gap-5 lg:gap-5 lg:p-10 '>
             <h1 className='w-full h-auto text-xl font-bold text-black'>Membangun Brand, Menggerakkan UMKM, Menciptakan Dampak Nyata</h1>
             <article className='w-full h-auto text-sm lg:text-lg text-gray-900'>
@@ -159,14 +159,14 @@ function App() {
             </div>
           </div>
         </section>
-        <section id='overview' className='w-full h-lvh flex flex-col gap-7 md:gap-20 justify-center items-center p-5 md:px-5 md:py-10 bg-[#588A96] text-white '>
+        <section id='overview' className='w-full h-auto md:h-lvh flex flex-col gap-7 md:gap-20 justify-center items-center p-5 md:px-5 md:py-10 bg-[#588A96] text-white '>
           <div className='w-auto px-10 flex flex-col items-center gap-5'>
             <h1 className='w-auto font-bold underline text-3xl'>TENTANG DIPDOP UNIVERSE CORP</h1>
             <article>
               PT DIPDOP UNIVERSE CORP merupakan holding company yang menaungi berbagai unit  usaha di bidang kreatif, media, dan pemberdayaan UMKM.  Kami berfokus pada pengembangan ekosistem kolaboratif yang menghubungkan brand,  UMKM, komunitas, dan audiens melalui pendekatan strategis, partisipatif, dan  berorientasi dampak.  Dengan pengalaman dalam kampanye digital, edukasi, media UMKM, dan pengelolaan  komunitas, DIPDOP hadir sebagai mitra strategis bagi perusahaan, institusi, dan  organisasi yang ingin menciptakan pertumbuhan berkelanjutan sekaligus dampak sosial  yang terukur.
             </article>
           </div>
-          <div className='bg-[#808DFD] w-full text-lg py-1 font-semibold px-1 grid grid-cols-4'>
+          <div className='bg-[#808DFD] w-full text-xs md:text-base  py-1 font-semibold px-1 grid grid-cols-4'>
             <p className='h-full p-2 border-r-2 border-white'># Creative & Marketing Expertise</p>
             <p className='h-full p-2 border-r-2 border-white'># Community & Grassroots Engagement</p>
             <p className='h-full p-2 border-r-2 border-white'># UMKM Empowerment Platform</p>
@@ -218,32 +218,32 @@ function App() {
             ))}
           </div>
         </section>
-        <h2 className="text-center px-4 text-lg md:text-4xl text-gray-900 py-2 font-bold uppercase flex flex-wrap justify-center items-center gap-2">More Than a Vendor. Your  <span className='text-teal-700'>Ecosystem Partner</span></h2>
+        <h2 className="text-center px-4 text-lg md:text-4xl text-gray-900 py-8 font-bold uppercase  flex flex-wrap justify-center items-center gap-2">More Than a Vendor. Your  <span className='text-teal-700'>Ecosystem Partner</span></h2>
         <div className='w-full h-auto flex md:flex-row flex-col bg-[#E5E5E5] text-gray-800 border-t border-b border-black'>
           <div className='w-full h-auto flex flex-col '>
-            <h1 className='w-full h-[151px] border-b border-black text-black p-2 lg:p-5 text-xl lg:text-xl font-bold '>
+            <h1 className='w-full h-auto border-b border-black text-black p-3 sm:p-4 md:p-5 text-base sm:text-lg md:text-xl lg:text-xl font-bold '>
               DIPDOP tidak hanya menyediakan jasa, tetapi membangun ekosistem.  Melalui integrasi agency, media, komunitas, dan produk kreatif, DIPDOP mampu  membantu perusahaan dan institusi dalam:
             </h1>
-            <div className='w-full h-[124px] flex flex-col gap-2 px-10 py-4 lg:gap-4 lg:px-20 border-b border-black '>
+            <div className='w-full h-auto flex flex-col gap-2 px-10 py-4 lg:gap-4 lg:px-20 border-b border-black '>
               <h2 className='text-xl font-bold text-black'>EXPERT SOLUTIONS</h2>
               <p>
                 Menjalankan kampanye yang relevan dengan target akar rumput
               </p>
             </div>
-            <div className='w-full h-[124px] flex flex-col gap-2 px-10 py-4 lg:gap-4 lg:px-20 border-b border-black '>
+            <div className='w-full h-auto flex flex-col gap-2 px-10 py-4 lg:gap-4 lg:px-20 border-b border-black '>
               <h2 className='text-xl font-bold text-black'>RESULTS-DRIVEN STRATEGIES</h2>
               <p>
                 Menjangkau UMKM dan komunitas secara autentik
               </p>
             </div>
-            <div className='w-full h-[124px] flex flex-col gap-2 px-10 py-5 lg:gap-4 lg:px-20 border-b border-black '>
+            <div className='w-full h-auto flex flex-col gap-2 px-10 py-5 lg:gap-4 lg:px-20 border-b border-black '>
               <h2 className='text-xl font-bold text-black'>A CREATIVE PARTNERSHIP</h2>
               <p>
                 Mengemas program CSR dan branding menjadi kegiatan yang berkelanjutan
               </p>
             </div>
-            <div className='w-full h-auto flex flex-col gap-4 p-4  border-black '>
-              <h1 className='w-full h-[151px] text-black p-2 lg:p-5 text-xl lg:text-xl font-bold '>Dengan pendekatan ini, kolaborasi bersama DIPDOP tidak berhenti pada satu proyek,  tetapi berkembang menjadi kemitraan jangka panjang yang menciptakan nilai bisnis  sekaligus dampak sosial.</h1>
+            <div className='w-full h-auto flex flex-col gap-4 p-3 sm:p-4 md:p-5 border-black '>
+              <h1 className='w-full h-auto text-black text-base sm:text-base md:text-xl lg:text-xl font-bold '>Dengan pendekatan ini, kolaborasi bersama DIPDOP tidak berhenti pada satu proyek,  tetapi berkembang menjadi kemitraan jangka panjang yang menciptakan nilai bisnis  sekaligus dampak sosial.</h1>
             </div>
 
           </div>
