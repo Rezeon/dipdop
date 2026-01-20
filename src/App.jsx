@@ -138,11 +138,11 @@ function App() {
             <span className="text-teal-800">Agency</span>
           </h2>
         </div>
-        <section id='hero' className='w-full md:flex-row flex-col border-b md:border-b-0 border-black h-auto md:h-lvh lg:h-120 flex bg-[#E5E5E5]'>
+        <section id='hero' className='w-full md:flex-row flex-col border-b md:border-b-0 border-black h-auto md:h-lvh lg:h-lvh flex bg-[#E5E5E5]'>
           <img src={Team} className='w-full md:w-2/3 h-auto' alt="" />
           <div className='md:w-1/3 h-auto md:h-full flex flex-col gap-5 p-5 md:p-4 md:gap-5 lg:gap-5 lg:p-10 '>
-            <h1 className='w-full h-auto text-xl font-bold text-black'>Membangun Brand, Menggerakkan UMKM, Menciptakan Dampak Nyata</h1>
-            <article className='w-full h-auto text-sm lg:text-lg text-gray-900'>
+            <h1 className='w-full h-auto text-xl lg:text-3xl font-bold text-black'>Membangun Brand, Menggerakkan UMKM, Menciptakan Dampak Nyata</h1>
+            <article className='w-full h-auto text-sm lg:text-xl font-semibold text-gray-900'>
               PT DIPDOP UNIVERSE CORP adalah holding company berbasis ekosistem kreatif yang  mengintegrasikan agency, media UMKM, komunitas, dan produk kreatif untuk mendukung  pertumbuhan bisnis dan pemberdayaan berkelanjutan.
             </article>
             <div className='w-fit p-2 flex flex-col gap-2 group'>
@@ -161,8 +161,8 @@ function App() {
         </section>
         <section id='overview' className='w-full h-auto md:h-lvh flex flex-col gap-7 md:gap-20 justify-center items-center px-1 py-2 md:px-5 md:py-10 bg-[#588A96] text-white '>
           <div className='w-auto px-10 flex flex-col items-center gap-5'>
-            <h1 className='w-auto font-bold underline text-3xl'>TENTANG DIPDOP UNIVERSE CORP</h1>
-            <article className='text-sm font-semibold md:text-base '>
+            <h1 className='w-auto font-bold underline text-3xl lg:text-4xl'>TENTANG DIPDOP UNIVERSE CORP</h1>
+            <article className='text-sm lg:text-2xl font-semibold md:text-base '>
               PT DIPDOP UNIVERSE CORP merupakan holding company yang menaungi berbagai unit  usaha di bidang kreatif, media, dan pemberdayaan UMKM.  Kami berfokus pada pengembangan ekosistem kolaboratif yang menghubungkan brand,  UMKM, komunitas, dan audiens melalui pendekatan strategis, partisipatif, dan  berorientasi dampak.  Dengan pengalaman dalam kampanye digital, edukasi, media UMKM, dan pengelolaan  komunitas, DIPDOP hadir sebagai mitra strategis bagi perusahaan, institusi, dan  organisasi yang ingin menciptakan pertumbuhan berkelanjutan sekaligus dampak sosial  yang terukur.
             </article>
           </div>
@@ -250,7 +250,7 @@ function App() {
         </div>
         <section id='why-us' className="bg-[#7B89FF] p-10 font-sans min-h-screen flex flex-col items-center">
 
-          <div className="w-full max-w-4xl border-2 border-dashed border-white/50 p-6 md:p-12">
+          <div className="w-full max-w-4xl border-2 border-dashed border-white/50 pt-20 p-6 md:p-12">
 
             <h2 className="text-white text-center text-2xl md:text-4xl font-black mb-10 tracking-tight">
               {collaborationData.title}
