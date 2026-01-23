@@ -13,11 +13,11 @@ export function Header() {
     }, []);
 
     const navLinks = [
-        { name: 'Home', href: '#hero' },
         { name: 'About', href: '#overview' },
         { name: 'Ecosystem', href: '#ecosystem' },
         { name: 'Why Us', href: '#why-us' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Collaborator', href: '#collaborator' },
+        { name: 'Partners', href: '#partners' },
     ];
 
     return (
