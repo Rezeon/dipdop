@@ -16,8 +16,9 @@ export function Header() {
         { name: 'About', href: '#overview' },
         { name: 'Ecosystem', href: '#ecosystem' },
         { name: 'Why Us', href: '#why-us' },
-        { name: 'Collaborator', href: '#collaborator' },
         { name: 'Partners', href: '#partners' },
+        { name: 'Collaborator', href: '#collaborator' },
+        { name: 'Testimony', href: '#testimoni' },
     ];
 
     return (

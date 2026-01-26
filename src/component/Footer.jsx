@@ -1,49 +1,73 @@
-export function  Footer() {
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Youtube,
+  Globe,
+} from "lucide-react";
+
+export function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  const socialLinks = [
+    {
+      icon: <Facebook size={18} />,
+      url: "https://web.facebook.com/dipdop.id?_rdc=1&_rdr",
+    },
+    { icon: <Twitter size={18} />, url: "https://twitter.com/dipdop_id" },
+    { icon: <Globe size={18} />, url: "https://g.page/dipdop?we" }, // Google Business
+    {
+      icon: <Linkedin size={18} />,
+      url: "https://www.linkedin.com/company/dipdop",
+    },
+    {
+      icon: <Instagram size={18} />,
+      url: "https://www.instagram.com/dipdop.id/",
+    },
+    {
+      icon: <Youtube size={18} />,
+      url: "https://www.youtube.com/@dipdopindonesia",
+    },
+  ];
+
   return (
-    <footer className="bg-[#E5E5E5] w-full">
-      <div className="w-full  mx-auto px-10 py-12">
-        
-        <h1 className="text-6xl font-black tracking-tighter mb-16 text-black">
-          DIPDOP
-        </h1>
-
-        <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-between text-gray-800 ">
-          <div>
-            <h3 className="font-bold text-lg mb-4 uppercase">Contact</h3>
-            <div className="space-y-1 text-sm md:text-base">
-              <p><span className="font-bold">Email:</span> official.dipdop@gmail.com</p>
-              <p><span className="font-bold">Phone:</span> +62 811-305-490</p>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-lg mb-4 uppercase">About Us</h3>
-            <div className="space-y-4 text-[10px] md:text-xs leading-relaxed max-w-xs uppercase">
-              <p>
-                When your business needs branding or a kick-ass campaign, 
-                DIPDOP™ is here for you.
-              </p>
-              <p>
-                We believe in building meaningful projects that improve lives 
-                through research, creativity, and technology.
-              </p>
-              <p>
-                Collaboration is the art of getting results with trust. 
-                Build yours with DIPDOP™
-              </p>
-            </div>
-          </div>
-
-          <div className="md:text-left">
-            <h3 className="font-bold text-lg mb-4 uppercase">Social</h3>
-            <ul className="space-y-1 font-bold underline decoration-1 underline-offset-2">
-              <li><a href="https://instagram.com/dipdop.id" className="hover:opacity-70">Instagram</a></li>
-              <li><a href="https://www.linkedin.com/company/dipdop/posts/?feedView=all" className="hover:opacity-70">LinkedIn</a></li>
-              <li><a href="https://twitter.com/dipdop_id" className="hover:opacity-70">X</a></li>
-            </ul>
-          </div>
+    <footer className="w-full bg-[#f8f9fb] border-t border-gray-200 py-6 px-4 md:px-12">
+      <div className=" mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* Kiri: Logo Section */}
+        <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center">
+            {/* h-8 atau h-10 biasanya ukuran standar footer agar tidak terlalu dominan */}
+            <img
+              src="https://dipdop.net/wp-content/uploads/2019/12/footer-widget.png"
+              alt="Logo"
+              className="h-8 md:h-10 w-auto object-contain"
+            />
+          </a>
         </div>
+
+        {/* Tengah: Copyright */}
+        
+        <div className="text-gray-500 text-[12px] md:text-sm font-medium order-3 md:order-2 text-center md:text-left">
+           © 2026 PT DIPDOP UNIVERSE CORP
+        </div>
+
+        {/* Kanan: Social Media */}
+        <ul className="flex items-center mr-10 gap-3 order-2 md:order-3">
+          {socialLinks.map((social, index) => (
+            <li key={index}>
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex items-center justify-center bg-[#358dad] text-white hover:bg-[#99daf1] transition-colors duration-300"
+              >
+                {social.icon}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </footer>
   );
-};
+}
