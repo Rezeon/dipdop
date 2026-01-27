@@ -988,7 +988,7 @@ autentik dan produk interior yang berkualitas.`,
             <div
               key={t.id}
               style={{ backgroundColor: t.color || "#333" }}
-              className="w-full h-auto md:min-h-screen flex flex-col md:flex-row justify-around items-center p-8 sticky top-0"
+              className=" w-full min-h-screen flex flex-col md:flex-row md:justify-around md:items-center md:p-8 sticky top-0"
             >
               <AnimatedContent
                 distance={100}
@@ -1006,7 +1006,7 @@ autentik dan produk interior yang berkualitas.`,
                   <img src={t.img} alt={t.title} className="w-full h-auto" />
                 </div>
               </AnimatedContent>
-              <div className="w-full md:w-[50%] flex flex-col gap-6">
+              <div className="md:relative absolute top-[30%] w-full mb-5 md:w-[50%] flex flex-col gap-6">
                 <AnimatedContent
                   distance={100}
                   direction="vertical"
