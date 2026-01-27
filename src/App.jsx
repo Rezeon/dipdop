@@ -530,7 +530,7 @@ autentik dan produk interior yang berkualitas.`,
           </div>
 
           <div className="hidden md:block"></div>
-          <div className="relative self-end w-full h-auto md:h-fit flex flex-col bg-white p-5 md:p-10 lg:p-14 gap-6 rounded-tl-[50px]">
+          <div className="relative self-end w-full h-auto md:h-fit flex flex-col bg-white p-7 md:p-10 lg:p-14 gap-6 rounded-tl-[50px]">
             <div className="absolute -top-[50px] right-0 w-[50px] h-[50px] hidden md:block">
               <div className="w-full h-full rounded-br-[50px] shadow-[20px_20px_0_20px_white]"></div>
             </div>
@@ -703,7 +703,7 @@ autentik dan produk interior yang berkualitas.`,
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-8 p-10 rounded-b-3xl md:rounded-tr-4xl bg-[#358dad]">
+          <div className="grid grid-cols-1 grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-2 md:gap-8 p-2 md:p-10 rounded-b-3xl md:rounded-tr-4xl bg-[#358dad]">
             {dipData.map((d) => (
               <div
                 key={d.id}
