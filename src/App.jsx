@@ -340,21 +340,21 @@ autentik dan produk interior yang berkualitas.`,
     { src: original, title: "Original", href: "" },
   ];
   const colaboratorLogo = [
-    { src: agriculture, title: "Dealls", category: "agriculture" },
-    { src: banking, title: "IKERJA", category: "banking" },
-    { src: consulting, title: "Glints", category: "consulting" },
+    { src: agriculture, title: "Dealls", category: "Agriculture" },
+    { src: banking, title: "IKERJA", category: "Banking" },
+    { src: consulting, title: "Glints", category: "Consulting" },
     { src: educational, title: "Pijar Mahir", category: "educational" },
-    { src: fnb, title: "Cerdas Cermat", category: "fnb" },
-    { src: goverment, title: "Cakap", category: "goverment" },
-    { src: hotel, title: "DANA", category: "hotel" },
-    { src: mining, title: "GoCorp", category: "mining" },
-    { src: organizations, title: "Kampus Merdeka", category: "organizations" },
-    { src: retail, title: "Taldo", category: "retail" },
-    { src: se, title: "Voucherku", category: "smes" },
-    { src: smess2, title: "Xendit", category: "smes" },
-    { src: smes, title: "Teman Belajar", category: "smes" },
-    { src: startup, title: "Original", category: "startup" },
-    { src: training, title: "Original", category: "training" },
+    { src: fnb, title: "Cerdas Cermat", category: "FNB" },
+    { src: goverment, title: "Cakap", category: "Goverment" },
+    { src: hotel, title: "DANA", category: "Hotel" },
+    { src: mining, title: "GoCorp", category: "Mining" },
+    { src: organizations, title: "Kampus Merdeka", category: "Organizations" },
+    { src: retail, title: "Taldo", category: "Retail" },
+    { src: se, title: "Voucherku", category: "SME`S" },
+    { src: smess2, title: "Xendit", category: "SME`S" },
+    { src: smes, title: "Teman Belajar", category: "SME`S" },
+    { src: startup, title: "Original", category: "Startup" },
+    { src: training, title: "Original", category: "Training" },
   ];
   const dipData = [
     {
@@ -439,26 +439,25 @@ autentik dan produk interior yang berkualitas.`,
       ? colaboratorLogo
       : colaboratorLogo.filter((logo) => logo.category === activeCategory);
   const categories = [
-    "training",
-    "startup",
-    "smes",
-    "retail",
-    ,
-    "mining",
-    "hotel",
-    "goverment",
-    "fnb",
-    "consulting",
-    "banking",
-    "agriculture",
-    "organizations",
+    "Training",
+    "Startup",
+    "SME`S",
+    "Retail",
+    "Mining",
+    "Hotel",
+    "Goverment",
+    "FNB",
+    "Consulting",
+    "Banking",
+    "Agriculture",
+    "Organizations",
   ];
 
   return (
     <>
       <Header />
       <div className="w-full relative flex flex-col pt-20 bg-white">
-        <div className="fixed bottom-5 right-6 flex flex-col items-end gap-3 z-50">
+        <div className="fixed bottom-15 right-6 flex flex-col items-end gap-3 z-50">
           <div
             className={`flex flex-col gap-3 transition-all duration-300 origin-bottom ${
               isOpen
@@ -779,13 +778,13 @@ autentik dan produk interior yang berkualitas.`,
 
               <div className="mt-12 grid grid-cols-2 gap-8">
                 <div>
-                  <p className="text-4xl font-bold italic">Expert</p>
+                  <p className="text-4xl pb-2 font-bold italic">Expert</p>
                   <p className="text-xs uppercase tracking-widest opacity-70">
                     Solutions
                   </p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold italic">Impact</p>
+                  <p className="text-4xl pb-2 font-bold italic">Impact</p>
                   <p className="text-xs uppercase tracking-widest opacity-70">
                     Social Value
                   </p>
@@ -952,16 +951,16 @@ autentik dan produk interior yang berkualitas.`,
               ))}
             </div>
 
-            <div className="flex flex-col md:flex-row w-auto  items-center">
+            <div className="flex flex-col md:flex-row w-auto justify-center items-center">
               {filteredLogos.map((logo, index) => (
                 <div
                   key={index}
-                  className="group relative flex flex-col w-auto items-center justify-center p-6 rounded-3xl border border-slate-50 hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all duration-500 animate-in fade-in zoom-in"
+                  className="group relative flex flex-col w-auto items-center justify-center p-6 "
                 >
                   <img
                     src={logo.src}
                     alt={logo.title}
-                    className="min-h-[100px] w-auto object-contain mb-4  transition-all"
+                    className="min-h-[120px] max-h-[120px] w-auto object-contain mb-4  transition-all"
                   />
                 </div>
               ))}
