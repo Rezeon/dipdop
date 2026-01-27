@@ -53,7 +53,7 @@ export function Footer() {
         </div>
 
         {/* Kanan: Social Media */}
-        <ul className="flex items-center mr-10 gap-3 order-2 md:order-3">
+        <ul className="flex items-center gap-3 order-2 md:order-3">
           {socialLinks.map((social, index) => (
             <li key={index}>
               <a

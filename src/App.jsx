@@ -570,11 +570,11 @@ autentik dan produk interior yang berkualitas.`,
           id="overview"
           className="w-full h-auto md:h-lvh flex flex-col md:flex-row gap-7 md:gap-20 justify-center items-center px-1 py-2 md:px-5 md:py-10 bg-white text-white "
         >
-          <div className="w-auto md:w-[50%] h-auto pl-10 flex flex-col items-start gap-5">
+          <div className="w-auto md:w-[50%] h-auto p-3 md:p-10 flex flex-col items-start gap-5">
             <h1 className="w-auto font-bold text-[#ffcf6b] poppins-bold text-2xl lg:text-8xl">
               TENTANG DIPDOP UNIVERSE CORP
             </h1>
-            <article className="text-sm font-sans text-blue-500 lg:text-lg font-semibold md:text-lg ">
+            <article className="text-sm font-sans text-blue-500 lg:text-lg font-bold md:text-lg ">
               PT DIPDOP UNIVERSE CORP merupakan holding company yang menaungi
               berbagai unit usaha di bidang kreatif, media, dan pemberdayaan
               UMKM. Kami berfokus pada pengembangan ekosistem kolaboratif yang
@@ -988,11 +988,11 @@ autentik dan produk interior yang berkualitas.`,
             <div
               key={t.id}
               style={{ backgroundColor: t.color || "#333" }}
-              className="w-full min-h-screen flex shadow-2xl flex-col md:flex-row justify-around items-center p-8 sticky top-0"
+              className="w-full h-auto md:min-h-screen flex flex-col md:flex-row justify-around items-center p-8 sticky top-0"
             >
               <AnimatedContent
                 distance={100}
-                direction="horizontal"
+                direction="vertical"
                 duration={1.8}
                 reverse
                 ease="power3.out"
@@ -1002,16 +1002,14 @@ autentik dan produk interior yang berkualitas.`,
                 threshold={0.1}
                 delay={0}
               >
-                {/* Gambar dengan Shadow Halus */}
                 <div className="w-full z-10">
                   <img src={t.img} alt={t.title} className="w-full h-auto" />
                 </div>
               </AnimatedContent>
-              {/* Konten dengan Efek Kaca (Glassmorphism) */}
               <div className="w-full md:w-[50%] flex flex-col gap-6">
                 <AnimatedContent
                   distance={100}
-                  direction="horizontal"
+                  direction="vertical"
                   duration={1.8}
                   ease="power3.out"
                   initialOpacity={0}
@@ -1021,11 +1019,11 @@ autentik dan produk interior yang berkualitas.`,
                   delay={0}
                 >
                   <SpotlightCard
-                    className="p-10 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl"
+                    className="p-6 md:p-10 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl max-h-[70vh] md:max-h-none overflow-y-auto custom-scrollbar"
                     spotlightColor="rgba(255, 255, 255, 0.3)"
                   >
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest backdrop-blur-sm">
+                      <span className="bg-white/20 text-white px-4 py-1 rounded-full text-[10px] md:text-xs font-bold tracking-widest backdrop-blur-sm">
                         {t.category}
                       </span>
                       <span className="text-white/60 text-sm font-medium">
@@ -1033,11 +1031,11 @@ autentik dan produk interior yang berkualitas.`,
                       </span>
                     </div>
 
-                    <h2 className="text-white text-5xl font-extrabold mb-6 tracking-tight">
+                    <h2 className="text-white text-3xl md:text-5xl font-extrabold mb-4 md:mb-6 tracking-tight">
                       {t.title}
                     </h2>
 
-                    <p className="text-white/90 text-lg leading-relaxed mb-8 italic">
+                    <p className="text-white/90 text-base md:text-lg leading-relaxed mb-6 md:mb-8 italic">
                       "{t.about}"
                     </p>
 
@@ -1050,7 +1048,7 @@ autentik dan produk interior yang berkualitas.`,
                         }
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-3 bg-white text-black hover:bg-black hover:text-white px-10 py-4 rounded-full font-bold transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
+                        className="inline-flex items-center gap-3 bg-white text-black hover:bg-black hover:text-white px-6 py-3 md:px-10 md:py-4 rounded-full font-bold transition-all duration-300 transform hover:-translate-y-1 shadow-lg text-sm md:text-base"
                       >
                         {t.category === "Landing page"
                           ? "OPEN PROJECT"
