@@ -59,9 +59,6 @@ export function Header() {
 
                 {/* TAGLINE / CTA MINI */}
                 <div className='flex items-center gap-4'>
-                    <p className='hidden sm:block text-sm italic font-medium text-gray-500'>
-                        Your Ultimate Concept
-                    </p>
                     <a 
                         href="#contact" 
                         className="bg-[#588A96] text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-black transition-all shadow-md"

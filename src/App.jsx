@@ -7,7 +7,7 @@ import { FaRegMessage } from "react-icons/fa6";
 import Team from "/grub.jpg";
 import Kemenin from "/kemenin.jpg";
 import start4 from "/startup4.jpeg";
-//logo partner
+//logo partner & collaborator
 import dealls from "/dealls.png";
 import kerja from "/kerja.png";
 import glint from "/glint.jpg";
@@ -21,6 +21,11 @@ import taldo from "/taldo.png";
 import voucherku from "/voucherku.png";
 import xendit from "/xendit.png";
 import tembapbelajar from "/tempatbelajar.webp";
+import tembapbelajar2 from "/Tempat_Belajar.png";
+import bankuob from "/UOB-Bank.png";
+import voucherku2 from "/voucherku2.png";
+import bankbjb from "/bank_bjb.png";
+import bankindonesia from "/Bank _indonesia.png";
 import original from "/original.webp";
 
 import alung from "/alung.png";
@@ -456,7 +461,8 @@ autentik dan produk interior yang berkualitas.`,
   return (
     <>
       <Header />
-      <div className="w-full relative flex flex-col pt-20 bg-white">
+      {/** kalo mau di revisi silakan asal rapi boleh pakai AI tapi jangan 100% & didokumentasi rapi */}
+      <div className="w-full relative flex flex-col pt-20 bg-[#EDEDCE]">
         <div className="fixed bottom-15 right-6 flex flex-col items-end gap-3 z-50">
           <div
             className={`flex flex-col gap-3 transition-all duration-300 origin-bottom ${
@@ -517,6 +523,7 @@ autentik dan produk interior yang berkualitas.`,
             <FaRegMessage color="white" />
           </button>
         </div>
+        {/** Hero */}
         <section
           id="hero"
           className="relative min-h-screen rounded-b-2xl grid grid-cols-1 md:grid-cols-2 font-sans bg-center bg-cover bg-no-repeat overflow-hidden"
@@ -529,20 +536,20 @@ autentik dan produk interior yang berkualitas.`,
           </div>
 
           <div className="hidden md:block"></div>
-          <div className="relative self-end w-full h-auto md:h-fit flex flex-col bg-white p-7 md:p-10 lg:p-14 gap-6 rounded-tl-[50px]">
+          <div className="relative group self-end w-full h-auto md:h-fit flex flex-col bg-[#EDEDCE] p-7 md:p-10 lg:p-14 gap-6 rounded-tl-[50px]">
             <div className="absolute -top-[50px] right-0 w-[50px] h-[50px] hidden md:block">
-              <div className="w-full h-full rounded-br-[50px] shadow-[20px_20px_0_20px_white]"></div>
+              <div className="w-full h-full rounded-br-[50px] shadow-[20px_20px_0_20px_#EDEDCE]"></div>
             </div>
 
             <div className="absolute bottom-0 -left-[50px] w-[50px] h-[50px] hidden md:block">
-              <div className="w-full h-full rounded-br-[50px] shadow-[20px_20px_0_20px_white]"></div>
+              <div className="w-full h-full rounded-br-[50px] shadow-[20px_20px_0_20px_#EDEDCE]"></div>
             </div>
-            <h1 className="roboto-a text-2xl lg:text-5xl text-[#358dad] font-bold leading-tight">
+            <h1 className="roboto-a text-2xl lg:text-5xl text-[#0C2C55] font-bold leading-tight">
               Membangun Brand, Menggerakkan UMKM, Menciptakan Dampak Nyata
             </h1>
 
-            <article className="text-sm font-sans lg:text-lg font-medium text-slate-700 max-w-xl">
-              <span className="text-[#358dad] font-bold transition-all duration-300 group-hover:text-yellow-400 group-hover:underline">
+            <article className="text-sm font-sans lg:text-lg font-medium text-[#0C2C55] max-w-xl">
+              <span className="text-[#296374] font-bold transition-all duration-300  group-hover:underline">
                 PT DIPDOP UNIVERSE CORP
               </span>{" "}
               adalah holding company berbasis ekosistem kreatif yang
@@ -552,28 +559,29 @@ autentik dan produk interior yang berkualitas.`,
             <div className="flex flex-wrap gap-4 mt-2">
               <a
                 href="#"
-                className="px-8 py-3 bg-amber-400 hover:bg-[#358dad] text-white rounded-full font-bold transition-all shadow-lg hover:shadow-none"
+                className="px-8 py-3 bg-[#6BA2B0] hover:bg-[#0C2C55] text-white rounded-full font-bold transition-all shadow-lg hover:shadow-none"
               >
                 Explore Ecosystem →
               </a>
               <a
                 href="#"
-                className="px-8 py-3 border-2 border-[#358dad] text-[#358dad] hover:bg-[#358dad] hover:text-white rounded-full font-bold transition-all"
+                className="px-8 py-3 border-2 border-[#6BA2B0] text-[#6BA2B0] hover:bg-[#6BA2B0] hover:text-white rounded-full font-bold transition-all"
               >
                 Collaborate →
               </a>
             </div>
           </div>
         </section>
+        {/** Overview */}
         <section
           id="overview"
-          className="w-full h-auto md:h-lvh flex flex-col md:flex-row gap-7 md:gap-20 justify-center items-center px-1 py-2 md:px-5 md:py-10 bg-white text-white "
+          className="w-full h-auto md:h-lvh flex flex-col md:flex-row gap-7 md:gap-20 justify-center items-center px-1 py-2 md:px-5 md:py-10 bg-[#EDEDCE] text-[#0C2C55] "
         >
           <div className="w-auto md:w-[50%] h-auto p-3 md:p-10 flex flex-col items-start gap-5">
-            <h1 className="w-auto font-bold text-[#ffcf6b] poppins-bold text-2xl lg:text-8xl">
+            <h1 className="w-auto font-bold text-[#0C2C55] poppins-bold text-2xl md:text-6xl lg:text-8xl">
               TENTANG DIPDOP UNIVERSE CORP
             </h1>
-            <article className="text-sm font-sans text-blue-500 lg:text-lg font-bold md:text-lg ">
+            <article className="text-sm font-sans text-[#6BA2B0] lg:text-lg font-bold md:text-lg ">
               PT DIPDOP UNIVERSE CORP merupakan holding company yang menaungi
               berbagai unit usaha di bidang kreatif, media, dan pemberdayaan
               UMKM. Kami berfokus pada pengembangan ekosistem kolaboratif yang
@@ -594,15 +602,16 @@ autentik dan produk interior yang berkualitas.`,
             />
           </div>
         </section>
-        <section id="achievements" className="py-24 bg-white">
+        {/** Achievements */}
+        <section id="achievements" className="py-24 bg-[#EDEDCE]">
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
               <div className="max-w-2xl">
-                <h2 className="text-[#358dad] poppins-bold text-4xl md:text-7xl font-bold uppercase leading-none mb-4">
+                <h2 className="text-[#0C2C55] poppins-bold text-4xl md:text-7xl font-bold uppercase leading-none mb-4">
                   Pencapaian <br />
-                  <span className="text-[#ffcf6b] italic">DIPDOP</span>
+                  <span className="text-[#2D6A76] italic">DIPDOP</span>
                 </h2>
-                <div className="h-1.5 w-32 bg-[#358dad] rounded-full"></div>
+                <div className="h-1.5 w-32 bg-[#2D6A76] rounded-full"></div>
               </div>
               <p className="text-slate-600 roboto-a font-medium max-w-sm text-right hidden md:block">
                 Dedikasi kami dalam membangun ekosistem digital dan pemberdayaan
@@ -611,8 +620,8 @@ autentik dan produk interior yang berkualitas.`,
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="group relative bg-[#358dad] p-1 rounded-[40px] shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div className="bg-white rounded-[36px] p-8 flex flex-col items-center text-center h-full">
+              <div className="group relative bg-[#6BA2B0] p-1 rounded-[40px] shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="bg-[#EDEDCE] rounded-[36px] p-8 flex flex-col items-center text-center h-full">
                   <div className="h-24 flex items-center justify-center mb-6">
                     <img
                       src={start4}
@@ -620,17 +629,16 @@ autentik dan produk interior yang berkualitas.`,
                       className="max-h-full object-contain  transition-all"
                     />
                   </div>
-                  <div className="w-full bg-[#358dad] py-6 px-4 rounded-3xl text-white relative">
-                    <p className="text-3xl font-black italic">20</p>
-                    <p className="uppercase tracking-[0.2em] text-[10px] font-bold opacity-80">
+                  <div className="w-full bg-[#6BA2B0] py-6 px-4 rounded-3xl text-white relative">
+                    <p className="uppercase tracking-[0.2em] text-xl font-bold opacity-80">
                       Finalis Startup
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="group relative bg-[#358dad] p-1 rounded-[40px] shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div className="bg-white rounded-[36px] p-8 flex flex-col items-center text-center h-full">
+              <div className="group relative bg-[#6BA2B0] p-1 rounded-[40px] shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="bg-[#EDEDCE] rounded-[36px] p-8 flex flex-col items-center text-center h-full">
                   <div className="h-24 flex items-center justify-center mb-6">
                     <img
                       src={Kemenin}
@@ -638,7 +646,7 @@ autentik dan produk interior yang berkualitas.`,
                       className="max-h-full object-contain"
                     />
                   </div>
-                  <div className="w-full bg-slate-100 py-6 px-4 rounded-3xl text-[#358dad]">
+                  <div className="w-full bg-[#6BA2B0] py-6 px-4 rounded-3xl text-white relative">
                     <p className="text-lg md:text-xl font-black uppercase leading-tight">
                       Penerima Dana <br /> Hibah Implementasi
                     </p>
@@ -646,32 +654,39 @@ autentik dan produk interior yang berkualitas.`,
                 </div>
               </div>
             </div>
-            <div className="relative bg-white border-2 border-[#358dad]/10 rounded-[40px] p-10 flex flex-col md:flex-row items-center justify-center gap-8 overflow-hidden group">
-              <div className="absolute -right-10 -bottom-10 text-[12rem] font-black text-slate-100 italic select-none group-hover:text-yellow-100 transition-colors">
+            <div className="relative bg-[#EDEDCE] border-2 border-[#6BA2B0] rounded-[40px] p-10 flex flex-col md:flex-row items-center justify-center gap-8 overflow-hidden group">
+              <div className="absolute -right-10 -bottom-10 text-[12rem] font-black text-slate-100 italic select-none group-hover:text-[#0C2C55] transition-colors">
                 200+
               </div>
 
               <div className="relative flex items-center gap-6">
                 <div className="flex -space-x-4">
-                  {[kerja, glint, dealls, pijar].map((i) => (
+                  {[
+                    cakap,
+                    tembapbelajar,
+                    voucherku2,
+                    bankbjb,
+                    bankindonesia,
+                    bankuob,
+                  ].map((i) => (
                     <div
                       key={i}
-                      className="w-12 h-12 rounded-full border-4 border-white shadow bg-white shadow-slate-200"
+                      className="w-15 h-15 rounded-full border-4 flex items-center justify-center border-white shadow bg-white shadow-[#6BA2B0]"
                     >
                       <img
                         src={i}
-                        className="w-full rounded-full h-full"
+                        className="w-full rounded-full h-auto "
                         alt=""
                       />
                     </div>
                   ))}
                 </div>
-                <div className="h-12 w-[2px] bg-slate-200 hidden md:block"></div>
+                <div className="h-12 w-[2px] bg-[#6BA2B0] hidden md:block"></div>
                 <div className="text-center md:text-left">
-                  <span className="text-5xl md:text-7xl font-black text-[#358dad] tracking-tighter">
+                  <span className="text-5xl md:text-7xl font-black text-[#6BA2B0] tracking-tighter">
                     200+
                   </span>
-                  <p className="text-[#358dad] font-bold uppercase tracking-widest text-sm">
+                  <p className="text-[#6BA2B0] font-bold uppercase tracking-widest text-sm">
                     Happy Clients & Partners
                   </p>
                 </div>
@@ -679,37 +694,38 @@ autentik dan produk interior yang berkualitas.`,
             </div>
           </div>
         </section>
+        {/** Ecosystem */}
         <section
           id="ecosystem"
           className="w-full h-auto pb-8 pt-8 flex justify-center flex-col  "
         >
-          <div className="flex text-[#358dad] poppins-bold justify-start items-start bg-white">
-            <div className="bg-[#358dad] p-10 rounded-tr-[40px] relative">
-              <p className="text-4xl md:text-8xl uppercase text-white font-extrabold leading-none">
+          <div className="flex text-[#EDEDCE] poppins-bold justify-start items-start bg-[#EDEDCE]">
+            <div className="bg-[#2D6A76] p-10 rounded-tr-[40px] relative">
+              <p className="text-4xl md:text-8xl uppercase text-[#EDEDCE] font-extrabold leading-none">
                 Our Ecosystem
               </p>
-              <h1 className="text-lg text-yellow-400 font-bold mt-4 max-w-2xl">
+              <h1 className="text-lg text-[#EDEDCE] font-bold mt-4 max-w-2xl">
                 Empat unit usaha yang saling terintegrasi untuk menjawab
                 kebutuhan bisnis, komunitas, dan pemberdayaan UMKM.
               </h1>
 
               <div className="absolute -top-[40px] left-0 w-[40px] h-[40px] overflow-hidden">
-                <div className="w-full h-full rounded-bl-[40px] shadow-[-20px_20px_0_20px_#358dad]"></div>
+                <div className="w-full h-full rounded-bl-[40px] shadow-[-20px_20px_0_20px_#2D6A76]"></div>
               </div>
 
               <div className="absolute bottom-0 hidden md:block -right-[40px] w-[40px] h-[40px] overflow-hidden">
-                <div className="w-full h-full rounded-bl-[40px] shadow-[-20px_20px_0_20px_#358dad]"></div>
+                <div className="w-full h-full rounded-bl-[40px] shadow-[-20px_20px_0_20px_#2D6A76]"></div>
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-2 md:gap-8 p-2 md:p-10 rounded-b-3xl md:rounded-tr-4xl bg-[#358dad]">
+          <div className="grid grid-cols-1 grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-2 md:gap-8 p-2 md:p-10 rounded-b-3xl md:rounded-tr-4xl bg-[#2D6A76]">
             {dipData.map((d) => (
               <div
                 key={d.id}
                 className="bg-white group p-8 w-full font-sans rounded-3xl shadow-2xl"
               >
                 <div className="flex relative flex-col gap-1  w-full">
-                  <h1 className="text-4xl poppins-bol text-[#ffcf6b] md:text-6xl font-black tracking-tighter  uppercase">
+                  <h1 className="text-4xl poppins-bol text-[#0C2C55] md:text-6xl font-black tracking-tighter  uppercase">
                     {d.unit}
                   </h1>
                   <div className="absolute lg:p-8 hidden 2xl:block right-0 top-0 ">
@@ -726,7 +742,7 @@ autentik dan produk interior yang berkualitas.`,
                       speed={4}
                       className="font-bold roboto-a "
                       delay={0}
-                      color="#ffcf6b"
+                      color="#EDEDCE"
                       shineColor="#ffffff"
                       spread={120}
                       direction="left"
@@ -735,10 +751,10 @@ autentik dan produk interior yang berkualitas.`,
                       disabled={false}
                     />
                   </div>
-                  <div className="h-1.5 bg-[#358dad] w-16 transition-all duration-500 group-hover:w-[50%]"></div>
+                  <div className="h-1.5 bg-[#6BA2B0] w-16 transition-all duration-500 group-hover:w-[50%]"></div>
                 </div>
 
-                <p className="font-sans text-black text-base font-bold mt-4 leading-relaxed max-w-xl">
+                <p className="font-sans text-[#0C2C55] text-base font-bold mt-4 leading-relaxed max-w-xl">
                   {d.description}
                 </p>
 
@@ -754,7 +770,7 @@ autentik dan produk interior yang berkualitas.`,
                   href={d.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-8 inline-flex bg-white text-[#358dad] px-6 py-3 rounded-4xl items-center gap-2 font-bold text-sm hover:bg-[#358dad] hover:text-white text-center transition-colors"
+                  className="mt-8 inline-flex bg-[#EDEDCE] text-[#358dad] px-6 py-3 rounded-4xl items-center gap-2 font-bold text-sm hover:bg-[#358dad] hover:text-white text-center transition-colors"
                 >
                   VISIT WEBSITE <span className=" text-lg">→</span>
                 </a>
@@ -762,15 +778,15 @@ autentik dan produk interior yang berkualitas.`,
             ))}
           </div>
         </section>
-        <section className="bg-white py-20 px-4 md:px-10">
-          <h2 className="text-4xl md:text-7xl poppins-bold text-[#358dad] mb-12 font-bold uppercase leading-tight">
+        <section className="bg-[#EDEDCE] py-20 px-4 md:px-10">
+          <h2 className="text-4xl md:text-7xl poppins-bold text-[#0C2C55] mb-12 font-bold uppercase leading-tight">
             More Than a Vendor. <br />
             Your{" "}
-            <span className="text-[#ffcf6b] italic">Ecosystem Partner</span>
+            <span className="text-[#2D6A76] italic">Ecosystem Partner</span>
           </h2>
 
           <div className="grid grid-cols-1 font-sans lg:grid-cols-12 gap-0 border border-gray-200 rounded-[40px] overflow-hidden shadow-sm">
-            <div className="lg:col-span-5 bg-[#358dad] p-8 md:p-12 text-white flex flex-col justify-between relative">
+            <div className="lg:col-span-5 bg-[#2D6A76] p-8 md:p-12 text-white flex flex-col justify-between relative">
               <h1 className="text-xl md:text-2xl font-bold leading-relaxed">
                 DIPDOP tidak hanya menyediakan jasa, tetapi membangun ekosistem
                 melalui integrasi agency, media, dan komunitas.
@@ -792,12 +808,12 @@ autentik dan produk interior yang berkualitas.`,
               </div>
             </div>
 
-            <div className="lg:col-span-7 font-sans bg-white grid grid-cols-1 md:grid-cols-2 relative">
+            <div className="lg:col-span-7 font-sans bg-[#EDEDCE]/40 grid grid-cols-1 md:grid-cols-2 relative">
               <div className="p-8 border-b border-gray-100 md:border-r group hover:bg-gray-50 transition-colors cursor-default">
                 <div className="w-10 h-10 bg-yellow-400 rounded-full mb-4 flex items-center justify-center font-bold">
                   1
                 </div>
-                <h2 className="text-xl font-bold text-[#358dad] mb-2 uppercase">
+                <h2 className="text-xl font-bold text-[#2D6A76] mb-2 uppercase">
                   Expert Solutions
                 </h2>
                 <p className="text-gray-600 text-sm">
@@ -810,7 +826,7 @@ autentik dan produk interior yang berkualitas.`,
                 <div className="w-10 h-10 bg-yellow-400 rounded-full mb-4 flex items-center justify-center font-bold">
                   2
                 </div>
-                <h2 className="text-xl font-bold text-[#358dad] mb-2 uppercase">
+                <h2 className="text-xl font-bold text-[#2D6A76] mb-2 uppercase">
                   Results-Driven
                 </h2>
                 <p className="text-gray-600 text-sm">
@@ -820,11 +836,7 @@ autentik dan produk interior yang berkualitas.`,
               </div>
 
               <div className="md:col-span-2 p-8 bg-gray-50/50 flex flex-col md:flex-row items-center gap-6 relative overflow-hidden">
-                <div className="hidden md:block absolute top-0 left-0 w-8 h-8">
-                  <div className="w-full h-full bg-white rounded-tl-[30px] shadow-[-15px_-15px_0_15px_#f9fafb]"></div>
-                </div>
-
-                <h2 className="text-xl font-bold text-[#358dad] uppercase shrink-0">
+                <h2 className="text-xl font-bold text-[#2D6A76] uppercase shrink-0">
                   Creative Partnership
                 </h2>
                 <p className="text-gray-700 font-medium italic border-l-4 border-yellow-400 pl-4">
@@ -835,12 +847,13 @@ autentik dan produk interior yang berkualitas.`,
             </div>
           </div>
         </section>
+        {/** Why-us */}
         <section
           id="why-us"
-          className="bg-[#358dad] font-sans min-h-screen flex flex-col items-center pt-20"
+          className="bg-[#0C2C55] font-sans min-h-screen flex flex-col items-center pt-20"
         >
           <div className="w-full max-w-6xl px-6 mb-12">
-            <h2 className="text-white text-left text-4xl md:text-7xl font-black tracking-tighter uppercase leading-none poppins-bold opacity-90">
+            <h2 className="text-[#EDEDCE] text-left text-4xl md:text-7xl font-black tracking-tighter uppercase leading-none poppins-bold opacity-90">
               {collaborationData.title}
             </h2>
           </div>
@@ -867,17 +880,17 @@ autentik dan produk interior yang berkualitas.`,
             <div className="flex-1 bg-white p-8 md:p-16 flex flex-col justify-center relative rounded-b-[40px] md:rounded-bl-none md:rounded-r-[40px] shadow-2xl">
               <div className="relative">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-1 bg-[#358dad]"></div>
-                  <h4 className="text-[#358dad] font-black text-2xl md:text-3xl tracking-tighter uppercase italic">
+                  <div className="w-10 h-1 bg-[#0C2C55]"></div>
+                  <h4 className="text-[#0C2C55] font-black text-2xl md:text-3xl tracking-tighter uppercase italic">
                     {collaborationData.footer.tagline}
                   </h4>
                 </div>
 
-                <p className="text-[#358dad]/80 text-base md:text-lg font-medium leading-relaxed mb-8">
+                <p className="text-[#0C2C55]/80 text-base md:text-lg font-medium leading-relaxed mb-8">
                   {collaborationData.footer.description}
                 </p>
 
-                <button className="group flex items-center gap-4 bg-[#358dad] text-white px-6 py-4 rounded-full font-bold hover:bg-[#00F0FF] hover:text-[#358dad] transition-all duration-300 shadow-lg">
+                <button className="group flex items-center gap-4 bg-[#0C2C55] text-white px-6 py-4 rounded-full font-bold hover:bg-[#00F0FF] hover:text-[#0C2C55] transition-all duration-300 shadow-lg">
                   Mulai Kolaborasi
                   <span className="group-hover:translate-x-2 transition-transform">
                     →
@@ -889,19 +902,20 @@ autentik dan produk interior yang berkualitas.`,
 
           <div className="h-20"></div>
         </section>
+        {/** Partner */}
         <section
           id="partners"
-          className="relative w-full bg-white pt-24 pb-20 overflow-hidden"
+          className="relative w-full bg-[#EDEDCE] pt-24 pb-20 overflow-hidden"
         >
           <div className="relative group pt-8 z-10 w-full mx-auto px-8">
             <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-4">
               <div>
-                <h2 className="text-[#358dad] text-4xl md:text-8xl font-black tracking-tighter uppercase poppins-bold">
-                  Our <span className="text-[#ffcf6b]">Partners</span>
+                <h2 className="text-[#0C2C55] text-4xl md:text-8xl font-black tracking-tighter uppercase poppins-bold">
+                  Our <span className="text-[#0C2C55]">Partners</span>
                 </h2>
-                <div className="h-1.5 bg-yellow-400 w-16 transition-all duration-500 group-hover:w-full"></div>
+                <div className="h-1.5 bg-[#6BA2B0] w-16 transition-all duration-500 group-hover:w-full"></div>
               </div>
-              <p className="text-[#358dad] font-bold uppercase tracking-widest text-lg">
+              <p className="text-[#0C2C55] font-bold uppercase tracking-widest text-lg">
                 Trusted by industry leaders
               </p>
             </div>
@@ -924,11 +938,12 @@ autentik dan produk interior yang berkualitas.`,
             </div>
           </div>
         </section>
-        <section id="collaborator" className="py-24 bg-white">
+        {/** Collaborator */}
+        <section id="collaborator" className="py-24 bg-[#EDEDCE]">
           <div className="w-full  mx-auto px-6">
             <div className="mb-12 w-auto group text-center md:text-left">
-              <h2 className="text-[#358dad] text-5xl md:text-8xl font-black uppercase poppins-bold mb-4">
-                Our <span className="text-[#ffcf6b]">Network</span>
+              <h2 className="text-[#0C2C55] text-5xl md:text-8xl font-black uppercase poppins-bold mb-4">
+                Our <span className="text-[#0C2C55]">Network</span>
               </h2>
               <p className="text-slate-500 font-medium">
                 Klik kategori untuk melihat partner strategis kami
@@ -942,8 +957,8 @@ autentik dan produk interior yang berkualitas.`,
                   onClick={() => setActiveCategory(cat)}
                   className={`px-6 py-2 rounded-full font-bold transition-all duration-300 border-2 ${
                     activeCategory === cat
-                      ? "bg-[#358dad] text-white border-[#358dad] shadow-lg scale-105"
-                      : "bg-transparent text-slate-400 border-slate-100 hover:border-[#358dad] hover:text-[#358dad]"
+                      ? "bg-[#0C2C55] text-[#EDEDCE] border-[#0C2C55] shadow-lg scale-105"
+                      : "bg-transparent text-[#2D6A76] border-[#6BA2B0] hover:border-[#0C2C55] hover:text-[#0C2C55]"
                   }`}
                 >
                   {cat}
@@ -955,22 +970,24 @@ autentik dan produk interior yang berkualitas.`,
               {filteredLogos.map((logo, index) => (
                 <div
                   key={index}
-                  className="group relative flex flex-col w-auto items-center justify-center p-6 "
+                  className="group relative flex flex-col w-auto items-center justify-center p-6 bg-[#EDEDCE]" // Contoh background cream
                 >
                   <img
                     src={logo.src}
                     alt={logo.title}
-                    className="min-h-[120px] max-h-[120px] w-auto object-contain mb-4  transition-all"
+                    /* Tambahkan mix-blend-multiply di sini */
+                    className="min-h-[120px] max-h-[120px] w-auto object-contain mb-4 transition-all mix-blend-multiply"
                   />
                 </div>
               ))}
             </div>
           </div>
         </section>
+        {/** Testimoni */}
         <section id="testimoni" className="w-full">
-          <div className="flex text-[#358dad] poppins-bold justify-start items-start bg-white">
+          <div className="flex text-[#0C2C55] poppins-bold justify-start items-start bg-[#EDEDCE]">
             <div className="bg-[#FAB95B] p-10 rounded-tr-[40px] relative">
-              <p className="text-4xl md:text-8xl uppercase text-white font-extrabold leading-none">
+              <p className="text-4xl md:text-8xl uppercase text-[#EDEDCE] font-extrabold leading-none">
                 testimony
               </p>
 
@@ -1061,42 +1078,43 @@ autentik dan produk interior yang berkualitas.`,
             </div>
           ))}
         </section>
+        {/** Contact */}
         <section
           id="contact"
           className="relative min-h-screen flex flex-col items-center justify-center p-6 font-sans bg-center bg-cover bg-no-repeat overflow-hidden"
           style={{ backgroundImage: `url(${Team})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-[#358dad]/80 -z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-[#0C2C55]/80 -z-10"></div>
 
-          <div className="bg-white px-8 py-3 rounded-full mb-8 shadow-xl">
-            <h2 className="text-[#358dad] font-black text-sm md:text-lg tracking-widest uppercase italic">
+          <div className="bg-[#EDEDCE] px-8 py-3 rounded-full mb-8 shadow-xl">
+            <h2 className="text-[#0C2C55] font-black text-sm md:text-lg tracking-widest uppercase italic">
               {contactData.title}
             </h2>
           </div>
 
-          <div className="relative w-full max-w-5xl bg-white p-8 md:p-20 flex flex-col md:flex-row gap-12 items-center rounded-[50px] shadow-[0_0_50px_rgba(0,0,0,0.3)]">
+          <div className="relative w-full max-w-5xl bg-[#EDEDCE] p-8 md:p-20 flex flex-col md:flex-row gap-12 items-center rounded-[50px] shadow-[0_0_50px_rgba(0,0,0,0.3)]">
             <div className="flex-1 text-center md:text-left">
-              <p className="text-[#358dad] font-bold text-xl md:text-3xl leading-tight tracking-tight">
+              <p className="text-[#0C2C55] font-bold text-xl md:text-3xl leading-tight tracking-tight">
                 {contactData.description}
               </p>
-              <div className="mt-8 h-1 w-20 bg-yellow-400 hidden md:block"></div>
+              <div className="mt-8 h-1 w-20 bg-[#6BA2B0] hidden md:block"></div>
             </div>
             <div className="flex-1 w-full flex flex-col gap-6">
               {contactData.actions.map((action, index) => (
                 <a
                   key={index}
                   href={action.url}
-                  className="group flex flex-col bg-slate-50 hover:bg-[#358dad] p-6 rounded-3xl transition-all duration-300 border border-slate-100"
+                  className="group flex flex-col bg-slate-50 hover:bg-[#0C2C55] p-6 rounded-3xl transition-all duration-300 border border-slate-100"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-[#358dad] group-hover:text-yellow-400 text-sm font-black uppercase tracking-widest mb-1 transition-colors">
+                    <span className="text-[#0C2C55] group-hover:text-yellow-400 text-sm font-black uppercase tracking-widest mb-1 transition-colors">
                       Get in Touch
                     </span>
-                    <span className="text-[#358dad] group-hover:text-white group-hover:translate-x-2 transition-all text-2xl">
+                    <span className="text-[#0C2C55] group-hover:text-[#EDEDCE] group-hover:translate-x-2 transition-all text-2xl">
                       →
                     </span>
                   </div>
-                  <span className="text-2xl md:text-4xl font-black text-slate-800 group-hover:text-white tracking-tighter uppercase transition-colors">
+                  <span className="text-2xl md:text-4xl font-black text-slate-800 group-hover:text-[#EDEDCE] tracking-tighter uppercase transition-colors">
                     {action.label}
                   </span>
                 </a>
